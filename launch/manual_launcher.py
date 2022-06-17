@@ -27,10 +27,10 @@ def generate_launch_description():
         name='servo_node'
     )
     joy_ctrl = Node(
-        package='deepracer-joy-control',
-        namespace='deepracer-joy-control',
+        package='deepracer_joy_control',
+        namespace='deepracer_joy_control',
         executable='joy-ctrl',
-        name='joy-ctrl'
+        name='joy_ctrl'
     )
     ld.add_action(servo_node)
     ld.add_action(joy_ctrl)
